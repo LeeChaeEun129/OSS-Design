@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/layoutMonthHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnPrevMonth"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="이전달" />
+
+        <TextView
+            android:id="@+id/txtMonthYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2026년 6월"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="16dp"/>
+
+        <Button
+            android:id="@+id/btnNextMonth"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="다음달"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutWeekHeader"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="7">
+
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:gravity="center" android:text="일"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:gravity="center" android:text="월"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:gravity="center" android:text="화"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:gravity="center" android:text="수"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:gravity="center" android:text="목"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:gravity="center" android:text="금"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:gravity="center" android:text="토"/>
+    </LinearLayout>
+
+    <!-- 캘린더 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCalendar"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp" />
+
+
+    <!-- 버튼들 -->
+    <Button
+        android:id="@+id/btnAddService"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="구독 서비스 추가"
+        android:backgroundTint="#57c7cb"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnEditService"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="구독 서비스 수정"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#579ecb"
+        android:textColor="#FFFFFF"/>
+
+
+    <Button
+        android:id="@+id/btnStartSimulation"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="다이어트 시뮬레이션 시작"
+        android:backgroundTint="#5265f3"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="9dp"/>
+
+    <!-- 프로필 + 설정 아이콘을 수평으로 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_profile"
+            android:background="@android:color/transparent"
+            android:contentDescription="프로필"
+            android:layout_marginEnd="40dp"/>
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_settings"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="16dp"
+            android:contentDescription="설정"/>
+    </LinearLayout>
+</LinearLayout>

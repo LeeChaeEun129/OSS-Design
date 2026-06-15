@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <!-- 서비스명 -->
+    <TextView
+        android:id="@+id/txtServiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서비스명"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- 가격 -->
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₩0"
+        android:textSize="14sp"
+        android:textColor="#555555"/>
+
+    <!-- 결제일 -->
+    <TextView
+        android:id="@+id/txtBillingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결제일: "
+        android:textSize="14sp"
+        android:textColor="#777777"/>
+
+    <!-- ✅ 카테고리 표시 -->
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카테고리: "
+        android:textSize="14sp"
+        android:textColor="#555555"/>
+
+    <!-- ✅ 파티 정보 표시 -->
+    <TextView
+        android:id="@+id/txtPartyInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="파티 없음"
+        android:textSize="14sp"
+        android:textColor="#555555"/>
+
+    <!-- 수정/삭제 버튼 영역 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수정"
+            android:backgroundTint="#4A90E2"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삭제"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#E24A4A"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>

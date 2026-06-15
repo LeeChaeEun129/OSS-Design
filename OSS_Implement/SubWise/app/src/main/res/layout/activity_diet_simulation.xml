@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="다이어트 시뮬레이션 설정"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="아이템 이름 (예: 치킨)"
+            android:layout_marginBottom="8dp"/>
+
+
+        <TextView
+            android:text="무엇으로 환산해 드릴까요?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- 아이콘 버튼들 -->
+        <GridLayout
+            android:columnCount="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnChicken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="치킨"/>
+
+            <Button
+                android:id="@+id/btnCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아메리카노"/>
+
+            <Button
+                android:id="@+id/btnGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="게임기"/>
+
+            <Button
+                android:id="@+id/btnIpad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이패드" />
+
+            <Button
+                android:id="@+id/btnConcertTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="콘서트 티켓" />
+
+            <Button
+                android:id="@+id/btnCpu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPU" />
+
+            <Button
+                android:id="@+id/btnMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="한끼 식사" />
+
+            <Button
+                android:id="@+id/btnWage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최저 시급" />
+
+            <Button
+                android:id="@+id/btnTriangleKimbap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="삼각 김밥" />
+
+            <Button android:text="기타 등등" />
+        </GridLayout>
+
+        <TextView
+            android:text="환산 기준가 설정 (직접 입력 가능)"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editExchangeValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="₩ 30000원"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnStartSimulation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시뮬레이션 시작"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/blue" />
+    </LinearLayout>
+</ScrollView>
+
